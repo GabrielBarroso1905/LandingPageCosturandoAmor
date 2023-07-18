@@ -13,6 +13,7 @@ export const Home = () => {
     description: 'Breve descrição',
     grid: [
       {
+        
         altText: 'Teste 1',
         srcImg: 'assets/images/6.jpg',
       },
