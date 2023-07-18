@@ -32,7 +32,7 @@ export const Image = styled.img`
   ${({ theme }) => css`
     width: 100%;
     transition: all 300ms ease-in-out;
-
+    
     &:hover {
       transform: scale(1.2) rotate(10deg);
     }

@@ -9,32 +9,32 @@ import mock from '../../components/GridContent/mock';
 import { Link } from 'react-scroll';
 export const Home = () => {
   const section = {
-    title: 'Título do Grid',
-    description: 'Descrição do GridDescrição do GridDescrição do GridDescrição do GridDescrição do Grid',
+    title: 'Galeria',
+    description: 'Breve descrição',
     grid: [
       {
         altText: 'Teste 1',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=1',
+        srcImg: 'assets/images/6.jpg',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=2',
+        srcImg: 'assets/images/1.jpg',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=3',
+        srcImg: 'assets/images/2.jpg',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=4',
+        srcImg: 'assets/images/3.jpg',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=5',
+        srcImg: 'assets/images/4.jpg',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=6',
+        srcImg: 'assets/images/5.jpg',
       },
       // Adicione mais objetos conforme necessário
     ],
@@ -43,7 +43,7 @@ export const Home = () => {
   const args = {
     title: 'Grid two columns',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam culpa eveniet doloribus harum? Ipsam, a necessitatibus? Sequi sunt accusantium quod, animi iure a, aliquid dolor ea vel magni dolore',
-    srcImg: 'assets/images/javascript.svg',
+    srcImg: 'assets/images/semfundo.jpg',
   };
 
   const argsGridContent = {
