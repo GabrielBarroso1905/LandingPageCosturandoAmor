@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+
 export default {
   title: 'Título Qualquer aceita html',
   html: `
