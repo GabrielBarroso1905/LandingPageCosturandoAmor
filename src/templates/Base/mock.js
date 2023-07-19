@@ -15,5 +15,5 @@ export const mockBase = {
     link: '#',
     srcImg: 'assets/images/favicon.ico',
   },
-  footerHtml: '<p>Teste de footer</p>',
+  footerHtml: '<p>Feito por Gabriel Barroso</p>',
 };

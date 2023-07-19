@@ -15,8 +15,13 @@ export default [
     newTab: false,
   },
   {
-    children: 'Galeria',
+    children: 'Video',
     link: '#target4',
+    newTab: false,
+  },
+  {
+    children: 'Galeria',
+    link: '#target5',
     newTab: false,
   },
  

@@ -5,8 +5,8 @@ import { GridText } from '../../components/GridText';
 import gridMock from '../../components/GridText/mock';
 import { GridTwoColumns } from '../../components/GridTwoColumns';
 import { GridContent } from '../../components/GridContent';
-import mock from '../../components/GridContent/mock';
-import { Link } from 'react-scroll';
+import mock from '../../components/GridContent/mock'; 
+import { GridVideo } from '../../components/GridVideo';
 export const Home = () => {
   const section = {
     title: 'Título do Grid',
@@ -57,9 +57,14 @@ export const Home = () => {
     <>
       <Base {...mockBase} >
         <GridTwoColumns {...args} background sectionId = 'target1'/>
-        <GridContent {...argsGridContent} sectionId = 'target2'/>
-        <GridText {...gridMock} background sectionId = 'target3'/>
-        <GridImage key={key}{...section} sectionId = 'target4' />
+        <GridContent {...argsGridContent}  sectionId = 'target2'/>
+        <GridText {...gridMock}  background sectionId = 'target3'/>
+        <GridVideo
+         const videoUrl = 'https://www.youtube.com/watch?v=HGTJBPNC-Gw'
+         text="Texto que será exibido em cima do vídeo"
+         sectionId="target4" // Seu valor dependerá do uso específico da prop no componente SectionBackground
+         />
+        <GridImage key={key}{...section} sectionId = 'target5' background/>
       </Base>
     </>
   );

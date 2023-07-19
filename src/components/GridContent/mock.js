@@ -1,29 +1,10 @@
+// eslint-disable-next-line
 export default {
-  title: 'O título que eu quero',
-  html: `<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-  <h2>Header Level 2</h2>
-
-  <ol>
-     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-     <li>Aliquam tincidunt mauris eu risus.</li>
-  </ol>
-
-  <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-  <h3>Header Level 3</h3>
-
-  <ul>
-     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-     <li>Aliquam tincidunt mauris eu risus.</li>
-  </ul>
-
-  <pre><code>
-  #header h1 a {
-    display: block;
-    width: 300px;
-    height: 80px;
-  }
-  </code></pre>`,
+  title: 'Título Qualquer aceita html',
+  html: `
+  <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.<p>
+  <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.<p>
+  <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.<p>
+`,
   background: false,
 };
