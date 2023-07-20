@@ -15,23 +15,23 @@ export const Home = () => {
       {
         
         altText: 'Teste 1',
-        srcImg: 'assets/images/6.jpg',
+        srcImg: 'https://source.unsplash.com/random/800x800?r=1',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'assets/images/1.jpg',
+        srcImg: 'https://source.unsplash.com/random/800x800?r=2',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'assets/images/2.jpg',
+        srcImg: 'https://source.unsplash.com/random/800x800?r=3',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'assets/images/3.jpg',
+        srcImg: 'https://source.unsplash.com/random/800x800?r=4',
       },
       {
         altText: 'Teste 2',
-        srcImg: 'assets/images/4.jpg',
+        srcImg: 'https://source.unsplash.com/random/800x800?r=5',
       },
       {
         altText: 'Teste 2',
@@ -44,7 +44,7 @@ export const Home = () => {
   const args = {
     title: 'Grid two columns',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam culpa eveniet doloribus harum? Ipsam, a necessitatibus? Sequi sunt accusantium quod, animi iure a, aliquid dolor ea vel magni dolore',
-    srcImg: 'assets/images/semfundo.jpg',
+    srcImg: 'assets/images/javascript.svg',
   };
 
   const argsGridContent = {
