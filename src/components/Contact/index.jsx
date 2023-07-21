@@ -99,66 +99,56 @@ export const Contact = ({ data, sectionId, background }) => {
                 </div>
                 <div id='success'></div>
              
-                <Styled.TextEnd>   <Styled.Btn  type='submit' className='btn btn-custom btn-lg'>
-                Send Message
+                <Styled.TextEnd> <Styled.Btn colorDark={background}  type='submit' className='btn btn-custom btn-lg'>
+                 Enviar Mensagem
                 </Styled.Btn>
                 </Styled.TextEnd>
               </form>
             </Styled.Form>
         <Styled.TextCenter>
-        <TextComponent>
+        <Heading size="small" colorDark={!background} as="h3">
           Contact Info
-        </TextComponent>
+        </ Heading>
         </Styled.TextCenter>
       
       <Styled.ContactInfo>
       <Styled.ContactItem>
      
-          <Styled.A href={data ? data.instagram : '/'}>
-            <i className="fa fa-instagram fa-2x"></i>
-          </Styled.A> 
-      
-           
-            </Styled.ContactItem>
-            <Styled.ContactItem>
-              <Styled.A href={data ? data.wpp : '/'}>
-                <i className="fa fa-whatsapp fa-2x"></i>
-              </Styled.A>
-            </Styled.ContactItem>
-            <Styled.ContactItem>
-              <Styled.A>
-                <i className="fa fa-envelope fa-2x"></i>
-              </Styled.A>
-            </Styled.ContactItem>
-      </Styled.ContactInfo>
-      <Styled.ContactInfo>
-      <Styled.ContactItem>  
-          <p>
+          <Styled.A  colorDark={!background} href={data ? data.instagram : '/'}>
+            <i className="fa fa-instagram fa-3x"></i>
+            <p>
             <span>
               <i className="fa fa-map-marker"></i> Address
             </span>
             {data ? data.address : 'loading'}
           </p>
-      </Styled.ContactItem>
-      <Styled.ContactItem>  
-          <p>
+          </Styled.A> 
+      
+           
+            </Styled.ContactItem>
+            <Styled.ContactItem>
+              <Styled.A colorDark={!background} href={data ? data.wpp : '/'}>
+                <i className="fa fa-whatsapp fa-3x"></i>
+                <p>
             <span>
               <i className="fa fa-phone"></i>Phone
             </span>{' '}
             {data ? data.phone : 'loading'}
           </p>
-        </Styled.ContactItem>
-        <Styled.ContactItem>
-          <p>
+              </Styled.A>
+            </Styled.ContactItem>
+            <Styled.ContactItem>
+              <Styled.A colorDark={!background}  href={data ? data.linkGmail : '/'}>
+                <i className="fa fa-envelope fa-3x"></i>
+                <p>
             <span>
               <i className="fa fa-envelope-o"></i> Email
             </span>{' '}
             {data ? data.email : 'loading'}
           </p>
-          </Styled.ContactItem>
-      </Styled.ContactInfo>
-
-       
+              </Styled.A>
+            </Styled.ContactItem>
+      </Styled.ContactInfo>  
       </Styled.Container>
     </SectionBackground>
   );

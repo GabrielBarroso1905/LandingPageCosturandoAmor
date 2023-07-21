@@ -7,6 +7,7 @@ const contactData = {
   email: 'contact@example.com',
   instagram: 'https://www.instagram.com',
   wpp: 'https://api.whatsapp.com/send?phone=559898069862&text=teste',
+  linkGmail: "mailto:gabrielmenezes1905@gmail.com?subject=Teste&body=teste"
 };
 
 export default {

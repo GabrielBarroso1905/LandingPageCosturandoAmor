@@ -1,4 +1,3 @@
-
 export default {
   title: 'Título Qualquer aceita html',
   html: `

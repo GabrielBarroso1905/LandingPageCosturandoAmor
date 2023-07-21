@@ -24,5 +24,9 @@ export default [
     link: '#target5',
     newTab: false,
   },
- 
+  {
+    children: 'Contato',
+    link: '#target6',
+    newTab: false,
+  },
 ];

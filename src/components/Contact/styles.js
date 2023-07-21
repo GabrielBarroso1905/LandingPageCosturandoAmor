@@ -65,19 +65,21 @@ export const Btn = styled.button`
  
   /* Margem e padding */
   margin: 10px 0;
-  padding: 15px 25px;
+  padding: 18px 28px;
 
   /* Borda e raio do botão */
   border: none;
   border-radius: 8px;
   font-weight: bold;
-
+  font-size: medium;
   /* Efeito de transição suave */
   transition: background-color 0.3s ease;
 
   /* Estilo do texto em hover */
   &:hover {
-    background-color: ${colorDark ? theme.colors.primaryColor :theme.colors.secondaryColor  };
+    background-color: ${theme.colors.secondaryColor};
+    color: ${theme.colors.white};
+ 
     cursor: pointer;
   }
   /* Alinhamento à direita */
@@ -95,11 +97,9 @@ export const Social = styled.div`
 
 export const A = styled.a`
  ${({ theme,colorDark }) => css`
-  /* padding-top: 50px; */
-  /* margin-top: 50px; */
-  color: ${colorDark ?  theme.colors.white : theme.colors.primaryColor };
-  &:hover {
-    color: ${colorDark ? theme.colors.primaryColor :theme.colors.secondaryColor  };
+ color: ${colorDark ?  theme.colors.primaryColor : theme.colors.white };
+ &:hover {
+    color: ${theme.colors.secondaryColor};
     cursor: pointer;
   }
   `}
