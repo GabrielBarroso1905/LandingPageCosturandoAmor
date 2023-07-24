@@ -15,30 +15,42 @@ const initialState = {
 
 export const Contact = ({ data, sectionId, background }) => {
   const [{ name, email, message }, setState] = useState(initialState)
-
+  const [isEmailSent, setIsEmailSent] = useState(false); 
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
   }
-  const clearState = () => setState({ ...initialState })
+  const handleCopyEmail = () => {
+    // Copy the email address to the clipboard
+    const emailElement = document.createElement('textarea');
+    emailElement.value = data ? data.email : '';
+    document.body.appendChild(emailElement);
+    emailElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(emailElement);
+
+    // Show the confirmation message
+    alert('Email copiado para a área de transferência!');
+  };
+
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(name, email, message)
+    e.preventDefault();
+    console.log(name, email, message);
     emailjs
-        .sendForm('gmailMassage', 'template_84p6leq', e.target, 'ad0N9gF7s1SE9x22z')
-
+      .sendForm('gmailMassage', 'template_84p6leq', e.target, 'ad0N9gF7s1SE9x22z')
       .then(
         (result) => {
-          console.log(result.text)
-          clearState()
+          console.log(result.text);
+          setIsEmailSent(true); // Update state to indicate that the email was successfully sent
+  
         },
         (error) => {
-          console.log(error.text)
+          console.log(error.text);
         }
-      )
+      );
   }
-
+  console.log(name, email, message)
   return (
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
@@ -50,16 +62,16 @@ export const Contact = ({ data, sectionId, background }) => {
             Please fill out the form below to send us an email, and we will
             get back to you as soon as possible.
           </TextComponent>
-          <Styled.Form>
-          <form name='sentMessage' validate onSubmit={handleSubmit}>
-                <div className='row'>
-                  <div className='col-md-6'>
-                    <div className='form-group'>
+          <Styled.Form validate onSubmit={handleSubmit}>
+          
+                <div >
+                  <div >
+                    <div >
                     <Styled.FormControl
                       type='text'
-                      id='name'
+                    
                       name='name'
-                      className='form-control'
+                     
                       placeholder='Name'
                       required
                       onChange={handleChange}
@@ -72,9 +84,9 @@ export const Contact = ({ data, sectionId, background }) => {
                     <div className='form-group'>
                     <Styled.FormControl
                         type='email'
-                        id='email'
+                       
                         name='email'
-                        className='form-control'
+                       
                         placeholder='Email'
                         required
                         onChange={handleChange}
@@ -83,12 +95,12 @@ export const Contact = ({ data, sectionId, background }) => {
                     </div>
                   </div>
                 </div>
-                <div className='form-group'>
+                <div >
                   <Styled.FormControlText
                     name='message'
-                    id='message'
+                 
                     className='form-control'
-                    rows='4'
+
                     placeholder='Message'
                     required
                     onChange={handleChange}
@@ -101,8 +113,10 @@ export const Contact = ({ data, sectionId, background }) => {
                  Enviar Mensagem
                 </Styled.Btn>
                 </Styled.TextEnd>
-              </form>
             </Styled.Form>
+
+              {isEmailSent &&<TextComponent >Obrigado! Sua Mensagem foi enviada com sucesso.</TextComponent>}
+            
         <Styled.TextCenter>
         <Heading size="small" colorDark={!background} as="h3">
           Contact Info
@@ -116,7 +130,7 @@ export const Contact = ({ data, sectionId, background }) => {
             <i className="fa fa-instagram fa-3x"></i>
             <p>
             <span>
-              <i className="fa fa-map-marker"></i> Address
+              <i className="fa fa-instagram"></i>
             </span>
             {data ? data.address : 'loading'}
           </p>
@@ -136,7 +150,7 @@ export const Contact = ({ data, sectionId, background }) => {
               </Styled.A>
             </Styled.ContactItem>
             <Styled.ContactItem>
-              <Styled.A colorDark={!background}  href={data ? data.linkGmail : '/'}>
+              <Styled.A colorDark={!background}  href={data ? data.linkGmail : '/'} onClick={handleCopyEmail}>
                 <i className="fa fa-envelope fa-3x"></i>
                 <p>
             <span>
