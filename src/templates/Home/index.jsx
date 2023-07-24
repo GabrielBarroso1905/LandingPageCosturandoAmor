@@ -54,7 +54,7 @@ const contactData = {
   address: 'gabrielb_barroso',
   phone: '(98) 4002-8922',
   email: 'GabrielMenezes1905@gmail.com',
-  instagram: 'https://www.instagram.com',
+  instagram: 'https://www.instagram.com/gabrielb_barroso/',
   wpp: 'https://api.whatsapp.com/send?phone=559898069862&text=teste',
 
 };
