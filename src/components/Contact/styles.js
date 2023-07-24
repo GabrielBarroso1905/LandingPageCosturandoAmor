@@ -14,6 +14,24 @@ export const Form = styled.form`
   `}
   
 `;
+
+export const BtnSpinner = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Adiciona posição relativa para que os elementos internos se posicionem relativamente a essa div */
+    
+    /* Exemplo de estilização para os elementos internos (pode variar de acordo com a sua necessidade) */
+    & > * {
+      position: absolute; /* Torna os elementos internos posicionados de forma absoluta */
+      top: 50%; /* Posiciona o elemento na metade da altura da div pai */
+      left: 50%; /* Posiciona o elemento na metade da largura da div pai */
+      transform: translate(-50%, -50%); /* Centraliza o elemento no centro da div pai */
+      z-index: 1; /* Defina o valor de z-index para controlar a ordem de sobreposição */
+    }
+  `}
+`;
 export const FormControl = styled.input`
   ${({ theme }) => css`
   display: block;

@@ -6,6 +6,7 @@ import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 import 'font-awesome/css/font-awesome.min.css';
 import emailjs from 'emailjs-com';
+import { Spinner } from '../Spinner';
 
 const initialState = {
   name: '',
@@ -16,6 +17,9 @@ const initialState = {
 export const Contact = ({ data, sectionId, background }) => {
   const [{ name, email, message }, setState] = useState(initialState)
   const [isEmailSent, setIsEmailSent] = useState(false); 
+  const [isSendingEmail, setIsSendingEmail] = useState(false); // Novo estado para controlar o envio do email
+  const [bntClicado, setBntClicado] = useState(false); // Novo estado para controlar o envio do email
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
@@ -35,18 +39,21 @@ export const Contact = ({ data, sectionId, background }) => {
 
 
   const handleSubmit = (e) => {
+    setBntClicado(true)
     e.preventDefault();
     console.log(name, email, message);
+    setIsSendingEmail(true); 
     emailjs
       .sendForm('gmailMassage', 'template_84p6leq', e.target, 'ad0N9gF7s1SE9x22z')
       .then(
         (result) => {
           console.log(result.text);
           setIsEmailSent(true); // Update state to indicate that the email was successfully sent
-  
+          setIsSendingEmail(false); 
         },
         (error) => {
           console.log(error.text);
+          setIsSendingEmail(false);
         }
       );
   }
@@ -57,8 +64,7 @@ export const Contact = ({ data, sectionId, background }) => {
         <Heading colorDark={!background} uppercase as="h2">
           Get In Touch
         </Heading>
-       
-          <TextComponent >
+         <TextComponent >
             Please fill out the form below to send us an email, and we will
             get back to you as soon as possible.
           </TextComponent>
@@ -109,13 +115,19 @@ export const Contact = ({ data, sectionId, background }) => {
                 </div>
                 <div id='success'></div>
              
-                <Styled.TextEnd> <Styled.Btn colorDark={background}  type='submit' className='btn btn-custom btn-lg'>
+                <Styled.TextEnd> 
+                  
+                <Styled.Btn colorDark={background}  disabled={bntClicado} >
                  Enviar Mensagem
                 </Styled.Btn>
-                </Styled.TextEnd>
+                
+            </Styled.TextEnd>
             </Styled.Form>
-
-              {isEmailSent &&<TextComponent >Obrigado! Sua Mensagem foi enviada com sucesso.</TextComponent>}
+            <Styled.BtnSpinner> 
+            {isEmailSent &&<TextComponent >Obrigado! Mensagem enviada com sucesso.</TextComponent>}
+            {isSendingEmail &&<Spinner colorDark={!background} />}
+          
+            </Styled.BtnSpinner> 
             
         <Styled.TextCenter>
         <Heading size="small" colorDark={!background} as="h3">
@@ -136,7 +148,7 @@ export const Contact = ({ data, sectionId, background }) => {
           </p>
           </Styled.A> 
       
-           
+          
             </Styled.ContactItem>
             <Styled.ContactItem>
               <Styled.A colorDark={!background} href={data ? data.wpp : '/'}>
