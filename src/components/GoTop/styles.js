@@ -4,7 +4,7 @@ export const Container = styled.a`
   ${({ theme }) => css`
     position: fixed;
     background: ${theme.colors.primaryColor};
-    color: ${theme.colors.white};
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
