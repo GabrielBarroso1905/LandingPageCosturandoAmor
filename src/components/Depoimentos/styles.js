@@ -26,7 +26,7 @@ export const TestimonialContainer = styled.div`
 export const Testimonial = styled.div`
   ${({ theme }) => css`
     position: relative;
-    padding: 20px;
+    padding: 2px;
 
     .testimonial-image {
       float: left;
