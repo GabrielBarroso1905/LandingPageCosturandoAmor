@@ -8,6 +8,8 @@ import { GridContent } from '../../components/GridContent';
 import mock from '../../components/GridContent/mock'; 
 import { GridVideo } from '../../components/GridVideo';
 import { Contact } from '../../components/Contact';
+import { Depoimentos } from '../../components/Depoimentos';
+
 ; // Substitua pelo caminho correto para o componente Contact
 
 
@@ -69,17 +71,18 @@ const contactData = {
   return (
     <>
       <Base {...mockBase} >
-        <GridTwoColumns {...args} background sectionId = 'target1'/>
-        <GridContent {...argsGridContent}  sectionId = 'target2'/>
-        <GridText {...gridMock}  background sectionId = 'target3'/>
+        <GridTwoColumns {...args}  sectionId = 'target1'/>
+        <GridContent {...argsGridContent} background sectionId = 'target2'/>
+        <GridText {...gridMock}   sectionId = 'target3'/>
         <GridVideo
          const videoUrl = 'https://www.youtube.com/watch?v=HGTJBPNC-Gw'
          text="Texto que será exibido em cima do vídeo"
          sectionId="target4" // Seu valor dependerá do uso específico da prop no componente SectionBackground
-         />
-        <GridImage key={key}{...section} sectionId = 'target5' background/>
-        <Contact data={contactData} sectionId = 'target6' />
- 
+         background
+        />
+        <Depoimentos  background= {false} sectionId="target5" />
+        <GridImage key={key}{...section} sectionId = 'target6' background/>
+        <Contact data={contactData} sectionId = 'target7' />
       </Base>
     </>
   );
