@@ -3,8 +3,8 @@ import { Heading } from '../Heading';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-      margin-bottom: ${theme.spacings.xsmall};
-      text-align: center;
+    margin-bottom: ${theme.spacings.xsmall};
+    text-align: center;
   `}
 `;
 
@@ -42,7 +42,6 @@ export const Testimonial = styled.div`
 
     .testimonial-content {
       /* Novas regras de estilo */
-      overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -75,6 +74,23 @@ export const Testimonial = styled.div`
       top: -3rem;
       left: -5rem;
       transform: rotate(5deg);
+    }
+
+    /* Reorganiza a estrutura para tela pequena */
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .testimonial-image {
+        margin-bottom: 15px;
+      }
+
+      ${Heading} {
+        left: 0;
+        margin-bottom: ${theme.spacings.small};
+      }
     }
   `}
 `;
