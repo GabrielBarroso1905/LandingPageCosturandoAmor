@@ -15,8 +15,8 @@ export const SpinnerContainer = styled.div`
 
 export const LoadingSpinner = styled.div`
  ${({ theme,colorDark }) => css`
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   /* border: 8px solid ${colorDark ? theme.colors.white : theme.colors.primaryColor}; 
   border-top: 8px solid ${colorDark ? theme.colors.primaryColor : theme.colors.white};  */
   

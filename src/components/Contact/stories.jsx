@@ -18,4 +18,4 @@ export default {
   },
 };
 
-export const Template = (args) => <Contact {...args} />;
+export const Template = (args) => <Contact {...args}  background={true} />;
