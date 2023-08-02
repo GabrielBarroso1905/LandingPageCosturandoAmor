@@ -6,8 +6,6 @@ export const  Spinner = ({colorDark = true}) => {
       <Styled.LoadingSpinner colorDark = {colorDark}/>   
   );
 };
-Spinner.propTypes = {
-  
+Spinner.propTypes = { 
   colorDark: P.bool,
- 
 };

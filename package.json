@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-  "node": "18.x"
+    "node": "18.x"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@styled-icons/material-outlined": "^10.47.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

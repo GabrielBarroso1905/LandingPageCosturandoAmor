@@ -1,63 +1,93 @@
 import styled, { css } from 'styled-components';
+import { Title } from '../Heading/styles';
 
-export const ContainerImageText = styled.div`
+export const Container = styled.div`
   ${({ theme }) => css`
-    display: flex; /* Adiciona display: flex para alinhar os elementos filhos lado a lado */
-    white-space: nowrap;
-    @media screen and (max-width: 600px) {
-      /* Quando a largura da tela for 768 pixels ou menor */
-      flex-direction: column; /* Altera a direção do flex para column */
-      align-items: flex-start; /* Opcional: alinha os itens à esquerda */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: ${theme.spacings.medium}; /* Reduzimos o espaçamento entre os elementos */
+
+    @media ${theme.media.lteMedium} {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    ${Title} {
+      margin-bottom: ${theme.spacings.large};
     }
   `}
 `;
-
 
 export const About = styled.div`
   ${({ theme }) => css`
-  /* margin-bottom: ${theme.spacings.xhuge}; */
-  padding: 100px 0;
+    /* margin-bottom: ${theme.spacings.xhuge}; */
+  `}
+`;
+
+export const P = styled.p`
+  ${({ theme }) => css`
+    line-height: 1.5;
+    font-size: 20px;
+    color: ${theme.colors.text};
+  `}
+`;
+
+export const ImageContainer = styled.div`
+  ${({ theme }) => css`
+    text-align: center;
+    max-width: 100%;
+    
+    /* Ajuste para manter a imagem grande e movê-la para cima em telas menores */
+    @media (max-width: ${theme.media.lteMedium}) {
+      align-self: flex-start;
     }
   `}
-  
 `;
+
 export const Image = styled.img`
   ${({ theme }) => css`
-    width: 80%;
-    transition: all 300ms ease-in-out;
-    
-    &:hover {
-      transform: scale(1.01);
-    }
+    max-width: 100%;
+
+
+  
+
   `}
 `;
+
 export const List = styled.div`
   ${({ theme }) => css`
     display: flex; /* Utiliza o flexbox para colocar as listas lado a lado */
     flex-direction: row; /* Por padrão, coloca as listas em linha */
-
+   
     /* Estilização das listas filhas */
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
-      margin-right: 200px; /* Adicione margem direita para separar as listas */
+      margin-right: ${theme.spacings.large}; /* Use medidas flexíveis */
 
       li {
-        margin-bottom: 6px;
+        margin-bottom: ${theme.spacings.small}; /* Use medidas flexíveis */
         padding: 0;
         white-space: nowrap; /* Impede que o texto seja quebrado */
+                /* Estilização do ícone */
+          svg {
+          /* color: ${theme.colors.primary}; */
+          color: ${theme.colors.secondaryColor}; /* Define a cor do ícone */
+        
+          margin-right: ${theme.spacings.small}; /* Adiciona espaçamento entre o ícone e o texto */
+        }
+
       }
     }
 
-    @media (max-width: 408px) {
-      /* Quando a tela for menor que 768px, muda o flex-direction para "column" */
+    @media ${theme.media.lteMedium} {
+      display: flex;
       flex-direction: column;
-      
-      /* Adiciona margem inferior para separar as listas verticalmente */
-      ul {
-        margin-bottom: 20px;
-      }
+      align-items: center;
+  
+
     }
   `}
 `;

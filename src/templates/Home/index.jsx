@@ -9,11 +9,15 @@ import mock from '../../components/GridContent/mock';
 import { GridVideo } from '../../components/GridVideo';
 import { Contact } from '../../components/Contact';
 import { Depoimentos } from '../../components/Depoimentos';
-
+import { AboutUs } from '../../components/AboutUs';
+import { Service } from '../../components/Service';
+import { ServiceV2 } from '../../components/ServiceV2';
 ; // Substitua pelo caminho correto para o componente Contact
 
 
 export const Home = () => {
+
+
   const section = {
     title: 'Galeria',
     description: 'Breve descrição',
@@ -60,19 +64,31 @@ const contactData = {
   wpp: 'https://api.whatsapp.com/send?phone=559898069862&text=teste',
 
 };
+const argsServices= {
+  title: 'Título customizado', // Defina os valores desejados para title e description
+  title2: 'Título 3 customizado', // Defina os valores desejados para title e description
+  description: 'Descrição customizada', // Defina os valores desejados para title e description
 
+}
   const argsGridContent = {
     title: mock.title,
     html: mock.html,
   
   };
   const key = 'chave-unica'; // Defina uma chave única para o componente GridImage
-
+  const contactData2 = { 
+    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    Why: ['Razão 1', 'Razão 2', 'Razão 3'],
+    Why2: ['Razão 4', 'Razão 5', 'Razão 6'],
+    
+  };
   return (
     <>
       <Base {...mockBase} >
         <GridTwoColumns {...args}  sectionId = 'target1'/>
         <GridContent {...argsGridContent} background sectionId = 'target2'/>
+        <AboutUs data={contactData2} background={false} />
+        <Service {...argsServices} background= {true} sectionId= {'seu-id-aqui'} />
         <GridText {...gridMock}   sectionId = 'target3'/>
         <GridVideo
          const videoUrl = 'https://www.youtube.com/watch?v=HGTJBPNC-Gw'
@@ -80,6 +96,7 @@ const contactData = {
          sectionId="target4" // Seu valor dependerá do uso específico da prop no componente SectionBackground
          background
         />
+        <ServiceV2  background= {false} sectionId={"seu-id-aqui"} />
         <Depoimentos  background= {false} sectionId="target5" />
         <GridImage key={key}{...section} sectionId = 'target6' background/>
         <Contact data={contactData} sectionId = 'target7' />
