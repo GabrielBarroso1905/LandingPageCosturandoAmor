@@ -41,9 +41,8 @@ export const ServiceV2 = ({background,sectionId }) => {
 
   return (
     <SectionBackground background={background} sectionId={sectionId} >
-
     <Styled.Container>
-      <SectionContainer>
+    
         <Styled.Container>
           
         <Heading colorDark={!background} size="huge" as="h2">
@@ -73,7 +72,7 @@ export const ServiceV2 = ({background,sectionId }) => {
           ))}
         </Styled.TestimonialContainer>
 
-      </SectionContainer>
+
     </Styled.Container>
 </SectionBackground>
   );
