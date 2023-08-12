@@ -1,5 +1,4 @@
 import { Base } from '.';
-
 import mock from './mock';
 import { GridText } from '../../components/GridText';
 import gridMock from '../../components/GridText/mock';

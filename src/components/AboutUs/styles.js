@@ -74,7 +74,7 @@ export const List = styled.div`
                 /* Estilização do ícone */
           svg {
           /* color: ${theme.colors.primary}; */
-          color: ${theme.colors.secondaryColor}; /* Define a cor do ícone */
+          color: ${theme.colors.primaryColor}; /* Define a cor do ícone */
         
           margin-right: ${theme.spacings.small}; /* Adiciona espaçamento entre o ícone e o texto */
         }

@@ -4,7 +4,7 @@ export default {
   title: 'ServiceV2',
   component: ServiceV2,
   args: {
-    background: false,
+    background: true,
     sectionId:"seu-id-aqui"
   },
 };
@@ -12,7 +12,7 @@ export default {
 export const Template = (args) => {
   return (
     <div>
-      <ServiceV2  background= {false} sectionId={"seu-id-aqui"} />
+      <ServiceV2  color={"#fa9348"} sectionId={"seu-id-aqui"} />
     </div>
   );
 };

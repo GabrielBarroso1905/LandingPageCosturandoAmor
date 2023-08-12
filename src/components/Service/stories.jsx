@@ -14,7 +14,7 @@ export default {
 export const Template = (args) => {
   return (
     <div>
-      <Service {...args} background= {false} sectionId= {'seu-id-aqui'} />
+      <Service {...args} background= {false}  sectionId= {'seu-id-aqui'} />
     </div>
   );
 };

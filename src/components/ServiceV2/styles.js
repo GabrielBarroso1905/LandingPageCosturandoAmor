@@ -99,12 +99,14 @@ export const Testimonial = styled.div`
 
 export const IcoInsta = styled.div`
   ${({ theme,colorDark}) => css`
-    color: ${theme.colors.white} ;
+    color: ${theme.colors.black} ;
     /* color: ${colorDark ?  theme.colors.primaryColor : theme.colors.white} ; */
     margin: auto;
     font-size: 2rem;
   `}
 `;
+
+
 
 
 export const ServiceCardIcon = styled.div`
@@ -116,7 +118,7 @@ export const ServiceCardIcon = styled.div`
     margin: 12px auto;
     margin-bottom: 24px;
     border-radius: 50%;
-    background: linear-gradient(to right, ${theme.colors.primaryColor}, #0f78e9 100%) ;
+    background: linear-gradient(to right, ${theme.colors.primaryColor}, #ff7f24 100%) ;
     border-radius: 50%;
 
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);

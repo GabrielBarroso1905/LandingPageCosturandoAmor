@@ -40,12 +40,12 @@ export const ServiceV2 = ({background,sectionId }) => {
   ];
 
   return (
-    <SectionBackground background={background} sectionId={sectionId} >
+    <SectionBackground background={!background} sectionId={sectionId} >
     <Styled.Container>
     
         <Styled.Container>
-          
-        <Heading colorDark={!background} size="huge" as="h2">
+        
+        <Heading  color="black" colorDark={!background} size="huge" as="h2">
         OUR SERVICES
         </Heading>
           </Styled.Container>

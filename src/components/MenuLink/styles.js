@@ -7,7 +7,7 @@ export const Container = styled.a`
     font-weight: bold;
     font-size: ${theme.font.sizes.small};
     padding: ${theme.spacings.small};
-    color: ${theme.colors.primaryColor};
+    color: ${theme.colors.black};
     position: relative;
     
     &::after {
@@ -17,7 +17,7 @@ export const Container = styled.a`
       left: 50%;
       width: 0;
       height: 0.2rem;
-      background: ${theme.colors.secondaryColor};
+      background: ${theme.colors.white};
       transition: all 300ms ease-in-out;
     }
 

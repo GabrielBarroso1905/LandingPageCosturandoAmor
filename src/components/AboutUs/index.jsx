@@ -13,7 +13,7 @@ import { GridText } from '../GridText';
 export const AboutUs = ({ data, sectionId, background }) => { 
  
   return (
-    <SectionBackground background={background} sectionId={sectionId}>
+    <SectionBackground background={!background} sectionId={sectionId}>
     <Styled.Container background={!background} >
      <Styled.ImageContainer>
      <Styled.Image src='https://source.unsplash.com/random/500x440?r=2' className="img-responsive" alt="" />
@@ -22,10 +22,10 @@ export const AboutUs = ({ data, sectionId, background }) => {
     <Styled.About>
              <SectionContainer>
              <Heading size="medium" colorDark={!background} uppercase as="h2">
-            About Us
+            Quem somos 
             </Heading>
           <Styled.P>{data.paragraph ? data.paragraph : 'loading...'}</Styled.P>
-          <Heading size="small" colorDark={!background} uppercase as="h2">Why Choose Us? </Heading>        
+          <Heading size="small" colorDark={!background} uppercase as="h2">O que te espera conosco:</Heading>        
                 <Styled.List >
                   <ul>
                     {data.Why

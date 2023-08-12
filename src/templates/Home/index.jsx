@@ -52,9 +52,9 @@ export const Home = () => {
   };
 
   const args = {
-    title: 'Grid two columns',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam culpa eveniet doloribus harum? Ipsam, a necessitatibus? Sequi sunt accusantium quod, animi iure a, aliquid dolor ea vel magni dolore',
-    srcImg: 'assets/images/javascript.svg',
+    title: 'ASF Capital',
+  text: `Uma empresa focada em fazer seu negocio ganhar a internet, levando um produto de qualidade para um comprador em potencial.`,
+  srcImg: 'assets/images/LogoSFC2.JPG',
   };
 const contactData = {
   address: 'gabrielb_barroso',
@@ -65,7 +65,7 @@ const contactData = {
 
 };
 const argsServices= {
-  title: 'Título customizado', // Defina os valores desejados para title e description
+  title: 'Depoimentos', // Defina os valores desejados para title e description
   title2: 'Título 3 customizado', // Defina os valores desejados para title e description
   description: 'Descrição customizada', // Defina os valores desejados para title e description
 
@@ -78,31 +78,26 @@ const argsServices= {
   const key = 'chave-unica'; // Defina uma chave única para o componente GridImage
   const contactData2 = { 
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    Why: ['Razão 1', 'Razão 2', 'Razão 3'],
-    Why2: ['Razão 4', 'Razão 5', 'Razão 6'],
-    
+    Why: ['Integridade', 'Responsabilidade', 'Profissionalismo'],
+    Why2: ['Direcionamento', 'Resultados', 'Lucros'],    
   };
+
+ 
+  
   return (
     <>
       <Base {...mockBase} >
-        <GridTwoColumns {...args}  sectionId = 'target1'/>
-        <GridContent {...argsGridContent} background sectionId = 'target2'/>
+        <GridTwoColumns {...args}  background sectionId = 'target1'/>
+        <GridContent {...argsGridContent} sectionId = 'target2'/>
         <AboutUs data={contactData2} background={false} />
-        <Service {...argsServices} background= {true} sectionId= {'seu-id-aqui'} />
-        <GridText {...gridMock}   sectionId = 'target3'/>
-        <GridVideo
-         const videoUrl = 'https://www.youtube.com/watch?v=HGTJBPNC-Gw'
-         text="Texto que será exibido em cima do vídeo"
-         sectionId="target4" // Seu valor dependerá do uso específico da prop no componente SectionBackground
-         background
-        />
-        <ServiceV2  background= {false} sectionId={"seu-id-aqui"} />
+        <ServiceV2  background= {true} color={'black'}sectionId={"seu-id-aqui"} />
+        <Service {...argsServices} color={"#fa9348"} background= {true} sectionId= {'seu-id-aqui'} />
         <Depoimentos  background= {false} sectionId="target5" />
-        <GridImage key={key}{...section} sectionId = 'target6' background/>
-        <Contact data={contactData} sectionId = 'target7' />
+        <Contact data={contactData}  sectionId = 'target7' />
       </Base>
     </>
   );
 };
+
 
 export default Home;

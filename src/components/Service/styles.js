@@ -19,13 +19,23 @@ export const ServiceCards = styled.div`
     }
   `}
 `;
+
+export const video = styled.video`
+  ${({ theme, colorDark }) => css`
+    height: auto; /* Altera a altura para 'auto' para que o vídeo dimensione proporcionalmente */
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner pai */
+    border-radius: 10px;
+  `}
+`;
+
+
 export const ServiceCard = styled.div`
   ${({ theme,colorDark }) => css`
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 90px 18px;
-    background-color: ${colorDark ?  theme.colors.primaryColor : theme.colors.white };
+    padding: 50px 18px;
+    background-color: ${colorDark ?  theme.colors.primaryColor : theme.colors.primaryColor };
     border-radius: 25px;
     border: none;
     margin: 12px 8px;
