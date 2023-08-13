@@ -1,12 +1,8 @@
 import { Base } from '../Base';
-import { GridImage } from '../../components/GridImage';
 import { mockBase } from '../Base/mock';
-import { GridText } from '../../components/GridText';
-import gridMock from '../../components/GridText/mock';
 import { GridTwoColumns } from '../../components/GridTwoColumns';
 import { GridContent } from '../../components/GridContent';
 import mock from '../../components/GridContent/mock'; 
-import { GridVideo } from '../../components/GridVideo';
 import { Contact } from '../../components/Contact';
 import { Depoimentos } from '../../components/Depoimentos';
 import { AboutUs } from '../../components/AboutUs';
@@ -18,44 +14,13 @@ import { ServiceV2 } from '../../components/ServiceV2';
 export const Home = () => {
 
 
-  const section = {
-    title: 'Galeria',
-    description: 'Breve descrição',
-    grid: [
-      {
-        
-        altText: 'Teste 1',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=1',
-      },
-      {
-        altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=2',
-      },
-      {
-        altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=3',
-      },
-      {
-        altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=4',
-      },
-      {
-        altText: 'Teste 2',
-        srcImg: 'https://source.unsplash.com/random/800x800?r=5',
-      },
-      {
-        altText: 'Teste 2',
-        srcImg: 'assets/images/5.jpg',
-      },
-      // Adicione mais objetos conforme necessário
-    ],
-  };
-
   const args = {
     title: 'ASF Capital',
-  text: `Uma empresa focada em fazer seu negocio ganhar a internet, levando um produto de qualidade para um comprador em potencial.`,
-  srcImg: 'assets/images/LogoSFC2.JPG',
-  };
+  
+    text: `Uma holding focada em estabelecer processos comerciais B2B para chegar mais rápido e
+     com menos burocracia a um aumento de faturamento de 20 a 50% todos os meses.`,
+    
+    srcImg: 'assets/images/LogoSFC2.JPG',  };
 const contactData = {
   address: 'gabrielb_barroso',
   phone: '(98) 4002-8922',
@@ -89,11 +54,11 @@ const argsServices= {
       <Base {...mockBase} >
         <GridTwoColumns {...args}  background sectionId = 'target1'/>
         <GridContent {...argsGridContent} sectionId = 'target2'/>
-        <AboutUs data={contactData2} background={false} />
-        <ServiceV2  background= {true} color={'black'}sectionId={"seu-id-aqui"} />
-        <Service {...argsServices} color={"#fa9348"} background= {true} sectionId= {'seu-id-aqui'} />
-        <Depoimentos  background= {false} sectionId="target5" />
-        <Contact data={contactData}  sectionId = 'target7' />
+        <AboutUs data={contactData2} background={false} sectionId = 'target3'/>
+        <ServiceV2  background= {true} color={'black'}sectionId = 'target4' />
+        <Service {...argsServices} color={"#fa9348"} background= {true} sectionId = 'target5' />
+        <Depoimentos  background= {false} />
+        <Contact data={contactData}  sectionId = 'target6' />
       </Base>
     </>
   );

@@ -5,17 +5,17 @@ export default [
     newTab: false,
   },
   {
-    children: 'Grid 1',
+    children: 'O que fazemos',
     link: '#target2',
     newTab: false,
   },
   {
-    children: 'Grid 2',
+    children: 'Quem somos',
     link: '#target3',
     newTab: false,
   },
   {
-    children: 'Video',
+    children: 'Serviços',
     link: '#target4',
     newTab: false,
   },
@@ -25,13 +25,9 @@ export default [
     newTab: false,
   },
   {
-    children: 'Galeria',
+    children: 'Contato',
     link: '#target6',
     newTab: false,
   },
-  {
-    children: 'Contato',
-    link: '#target7',
-    newTab: false,
-  },
+
 ];

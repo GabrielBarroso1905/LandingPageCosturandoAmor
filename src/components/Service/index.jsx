@@ -19,6 +19,8 @@ export const Service = ({ background, sectionId, title, title2, description,colo
   const serviceDescription = description || defaultTexts.description;
   const serviceTitle2 = title2 || defaultTexts.title2;
   const videoPath = process.env.PUBLIC_URL + '/assets/videos/video.mp4';
+  const videoPath2 = process.env.PUBLIC_URL + '/assets/videos/video2.mp4';
+  const videoPath3 = process.env.PUBLIC_URL + '/assets/videos/video3.mp4';
 
   return (
     <SectionBackground background={background} sectionId={sectionId}>
@@ -40,13 +42,13 @@ export const Service = ({ background, sectionId, title, title2, description,colo
         </Styled.ServiceCard>
             <Styled.ServiceCard colorDark={!background}>
             <Styled.video controls>
-      <source src={videoPath} type="video/mp4" />
+      <source src={videoPath3} type="video/mp4" />
       Seu navegador não suporta o elemento de vídeo.
     </Styled.video>
             </Styled.ServiceCard>
             <Styled.ServiceCard colorDark={!background}>
             <Styled.video controls>
-      <source src={videoPath} type="video/mp4" />
+      <source src={videoPath2} type="video/mp4" />
       Seu navegador não suporta o elemento de vídeo.
     </Styled.video>
             </Styled.ServiceCard>

@@ -57,7 +57,7 @@ export const Testimonial = styled.div`
         margin-top: 15px;
         font-size: 22px;
         font-weight: 600;
-        color: #666;
+        color: Black;
       }
     }
 
