@@ -86,16 +86,17 @@ export const Testimonial = styled.div`
       .testimonial-image {
         margin-bottom: 15px;
       }
-      .p{
-        margin-bottom: 0;
-        font-size: '1.5rem' 
-        font-style: italic;
-    
-      }
+      
       ${Heading} {
         left: 0;
         margin-bottom: ${theme.spacings.small};
       }
     }
+    @media ${theme.media.small} {
+      .p{
+        margin-bottom: 0;
+        font-size: '1.5rem' 
+        font-style: italic;    
+      }
   `}
 `;
