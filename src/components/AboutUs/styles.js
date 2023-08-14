@@ -28,7 +28,7 @@ export const About = styled.div`
 export const P = styled.p`
   ${({ theme }) => css`
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 22px;
     color: ${theme.colors.text};
   `}
 `;
