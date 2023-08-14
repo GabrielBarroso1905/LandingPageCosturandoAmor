@@ -2,6 +2,7 @@ import P from 'prop-types';
 import * as Styled from './styles';
 import { SectionBackground } from '../SectionBackground';
 import { SectionContainer } from '../SectionContainer';
+import { TextComponent } from '../TextComponent';
 import { Heading } from '../Heading';
 
 export const Depoimentos = ({background,sectionId }) => {
@@ -57,7 +58,7 @@ export const Depoimentos = ({background,sectionId }) => {
             <Styled.Testimonial key={index}>
               <div className="testimonial-content">
               <div className="testimonial-meta"> - {testimonial.name} </div>
-                <p>"{testimonial.text}"</p>
+                <TextComponent>"{testimonial.text}"</TextComponent>
               </div>
             </Styled.Testimonial>
           ))}
