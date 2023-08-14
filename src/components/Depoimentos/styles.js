@@ -82,11 +82,16 @@ export const Testimonial = styled.div`
       flex-direction: column;
       align-items: center;
       text-align: center;
-
+       
       .testimonial-image {
         margin-bottom: 15px;
       }
-
+      .p{
+        margin-bottom: 0;
+        font-size: '1.5rem' 
+        font-style: italic;
+    
+      }
       ${Heading} {
         left: 0;
         margin-bottom: ${theme.spacings.small};

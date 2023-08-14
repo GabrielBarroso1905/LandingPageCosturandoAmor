@@ -58,7 +58,7 @@ export const Depoimentos = ({background,sectionId }) => {
             <Styled.Testimonial key={index}>
               <div className="testimonial-content">
               <div className="testimonial-meta"> - {testimonial.name} </div>
-                <TextComponent>"{testimonial.text}"</TextComponent>
+                <p>"{testimonial.text}"</p>
               </div>
             </Styled.Testimonial>
           ))}
