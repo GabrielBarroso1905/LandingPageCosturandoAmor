@@ -13,7 +13,7 @@ export const theme = {
       secondary: "'Montserrat', sans-serif",
     },
     sizes: {
-      xxsmall: '2.1rem',
+      xxsmall: '1.9rem',
       xsmall: '8rem',
       small: '1.6rem',
       medium2: '2.5rem',
