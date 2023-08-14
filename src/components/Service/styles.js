@@ -19,16 +19,39 @@ export const ServiceCards = styled.div`
     }
   `}
 `;
-
 export const video = styled.video`
   ${({ theme, colorDark }) => css`
-    height: auto; /* Altera a altura para 'auto' para que o vídeo dimensione proporcionalmente */
-    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner pai */
+    height: auto;
+    max-width: 100%;
     border-radius: 10px;
   `}
+  position: relative; /* Adiciona posicionamento relativo para poder posicionar a imagem de capa */
+`;
+export const source = styled.source`
+${({ theme }) => css`
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: -1; */
+`}
 `;
 
-
+export const VideoBackground = styled.img`
+  ${({ theme }) => css`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+  `}
+`;
 export const ServiceCard = styled.div`
   ${({ theme,colorDark }) => css`
     display: flex;

@@ -13,7 +13,7 @@ const defaultTexts = {
     'Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.',
 };
 
-export const Service = ({ background, sectionId, title, title2, description,color }) => {
+export const Service = ({ background, sectionId, title, title2, description, color }) => {
   // Define os textos utilizando os valores passados como parâmetros ou os valores padrão do objeto defaultTexts
   const serviceTitle = title || defaultTexts.title;
   const serviceDescription = description || defaultTexts.description;
@@ -31,26 +31,24 @@ export const Service = ({ background, sectionId, title, title2, description,colo
               {serviceTitle}
             </Heading>
           </Styled.Container>
-          
           <Styled.ServiceCards>
             <Styled.ServiceCard colorDark={!background}>
-              
-    <Styled.video controls>
-      <source src={videoPath} type="video/mp4" />
-      Seu navegador não suporta o elemento de vídeo.
-    </Styled.video>
-        </Styled.ServiceCard>
-            <Styled.ServiceCard colorDark={!background}>
-            <Styled.video controls>
-      <source src={videoPath3} type="video/mp4" />
-      Seu navegador não suporta o elemento de vídeo.
-    </Styled.video>
+              <Styled.video controls>
+                <Styled.source src={videoPath} type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </Styled.video>
             </Styled.ServiceCard>
             <Styled.ServiceCard colorDark={!background}>
-            <Styled.video controls>
-      <source src={videoPath2} type="video/mp4" />
-      Seu navegador não suporta o elemento de vídeo.
-    </Styled.video>
+              <Styled.video controls>
+                <source src={videoPath3} type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </Styled.video>
+            </Styled.ServiceCard>
+            <Styled.ServiceCard colorDark={!background}>
+              <Styled.video controls>
+                <source src={videoPath2} type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </Styled.video>
             </Styled.ServiceCard>
           </Styled.ServiceCards>
         </SectionContainer>
@@ -62,6 +60,6 @@ export const Service = ({ background, sectionId, title, title2, description,colo
 Service.propTypes = {
   background: P.bool.isRequired,
   sectionId: P.string,
-  title: P.string, 
-  description: P.string, 
+  title: P.string,
+  description: P.string,
 };

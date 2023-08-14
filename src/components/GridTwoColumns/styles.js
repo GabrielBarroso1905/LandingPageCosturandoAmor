@@ -11,6 +11,8 @@ export const Container = styled.div`
     @media ${theme.media.lteMedium} {
       grid-template-columns: 1fr;
       text-align: center;
+      gap: ${theme.spacings.xsmall};
+
     }
 
     ${Title} {
