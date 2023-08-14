@@ -7,7 +7,9 @@ export const Container = styled.div`
       font-size: ${theme.font.sizes.medium};
     }
     @media ${theme.media.small} {
+      background-color: blue;
       font-size: ${theme.font.sizes.xxsmall};
+
     }
   `}
 `;
