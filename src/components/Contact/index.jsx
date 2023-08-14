@@ -61,13 +61,12 @@ export const Contact = ({ data, sectionId, background }) => {
   return (
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
-        <Heading colorDark={!background} uppercase as="h2">
-          Get In Touch
-        </Heading>
-         <TextComponent >
-            Please fill out the form below to send us an email, and we will
-            get back to you as soon as possible.
-          </TextComponent>
+      <Heading colorDark={!background} uppercase as="h2">
+  Entre em Contato
+</Heading>
+<TextComponent>
+  Utilize o formulário abaixo para nos enviar um e-mail ou, se preferir, entre em contato diretamente através dos ícones de nossas redes sociais listados abaixo.
+</TextComponent>
           <Styled.Form validate onSubmit={handleSubmit}>
           
                 <div >
@@ -130,8 +129,8 @@ export const Contact = ({ data, sectionId, background }) => {
             </Styled.BtnSpinner> 
             
         <Styled.TextCenter>
-        <Heading size="small" colorDark={!background} as="h3">
-          Contact Info
+        <Heading size="medium" colorDark={!background} as="h3">
+          Informações de Contato
         </ Heading>
         </Styled.TextCenter>
       
@@ -139,7 +138,7 @@ export const Contact = ({ data, sectionId, background }) => {
       <Styled.ContactItem>
      
           <Styled.A  colorDark={!background} href={data ? data.instagram : '/'}>
-            <i className="fa fa-instagram fa-3x"></i>
+            <i className="fa fa-instagram fa-5x"></i>
             <p>
             <span>
               <i className="fa fa-instagram"></i>
@@ -152,7 +151,7 @@ export const Contact = ({ data, sectionId, background }) => {
             </Styled.ContactItem>
             <Styled.ContactItem>
               <Styled.A colorDark={!background} href={data ? data.wpp : '/'}>
-                <i className="fa fa-whatsapp fa-3x"></i>
+                <i className="fa fa-whatsapp fa-5x"></i>
                 <p>
             <span>
               <i className="fa fa-phone"></i>Phone
@@ -163,7 +162,7 @@ export const Contact = ({ data, sectionId, background }) => {
             </Styled.ContactItem>
             <Styled.ContactItem>
               <Styled.A colorDark={!background}  href={data ? data.linkGmail : '/'} onClick={handleCopyEmail}>
-                <i className="fa fa-envelope fa-3x"></i>
+                <i className="fa fa-envelope fa-5x"></i>
                 <p>
             <span>
               <i className="fa fa-envelope-o"></i> Email

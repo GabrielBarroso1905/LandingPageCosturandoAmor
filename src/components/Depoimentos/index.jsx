@@ -25,7 +25,7 @@ export const Depoimentos = ({background,sectionId }) => {
     {
       name: 'Resultados',
       img: 'https://source.unsplash.com/random/50x50?r=5',
-      text: 'Eu conheci a ASF através da indicação de uma amiga. E sendo bem honesto, meu negócio é diferente do ramo da minha amiga. Eu trabalho com estética e minha amiga com clínica odontológica, é mesmo assim, o Asafe e o time da ASF vêm nos dando resultados incríveis no final do mês!',
+      text: 'Eu conheci a ASF através da indicação de uma amiga. E sendo bem honesta, meu negócio é diferente do ramo da minha amiga. Eu trabalho com estética e minha amiga com clínica odontológica, é mesmo assim, o Asafe e o time da ASF vêm nos dando resultados incríveis no final do mês!',
     },
     {
       name: 'Segurança',

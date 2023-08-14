@@ -1,80 +1,73 @@
+import React from 'react';
 import P from 'prop-types';
 import * as Styled from './styles';
 import { SectionBackground } from '../SectionBackground';
 import { SectionContainer } from '../SectionContainer';
 import { Heading } from '../Heading';
-import 'font-awesome/css/font-awesome.min.css';
-export const ServiceV2 = ({background,sectionId }) => {
+import 'font-awesome/css/font-awesome.css'; // Importe o arquivo CSS da biblioteca
+
+export const ServiceV2 = ({ background, sectionId }) => {
   const testimonialsData = [
     {
-      name: 'John Doe',
-      icon: 'fa fa-whatsapp fa-2x',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget lacus vel odio viverra fringilla.',
+      name: 'Anúncios Online',
+      icon: 'fa fa-bullhorn fa-2x',
+      text: 'Nossos especialistas em marketing digital criam campanhas de anúncios online altamente direcionadas para alcançar um público específico para o seu produto. Usamos estratégias eficazes para aumentar a visibilidade da sua marca e maximizar o retorno do investimento.',
     },
     {
-      name: 'Jane Smith',
-      icon: 'fa fa-university fa-2x',
-      text: 'Pellentesque euismod euismod lacus sit amet aliquam. Nulla facilisi. Cras dapibus ullamcorper risus, nec facilisis enim commodo eget.',
+      name: 'Designer',
+      icon: 'fa fa-paint-brush fa-2x',
+      text: 'Nossa equipe de designers talentosos cria artes de anúncios atraentes e exclusivas que capturam a essência da sua marca. Além disso, desenvolvemos uma identidade visual consistente que representa a personalidade e os valores da sua empresa.',
     },
     {
-      name: 'Michael Johnson',
-      icon: 'fa fa-car fa-2x',
-      text: 'Sed sed enim odio. Vestibulum porttitor velit eget purus dictum, id varius erat venenatis.',
+      name: 'Chatbots',
+      icon: 'fa fa-android fa-2x',
+      text: 'Implementamos soluções de resposta automática e chatbots inteligentes para otimizar a interação com os seus clientes. Essas ferramentas automatizadas estão prontas para atender perguntas frequentes e oferecer suporte imediato, melhorando a experiência do cliente.',
     },
     {
-      name: 'John Doe',
-      icon: 'fa fa-upload fa-2x',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget lacus vel odio viverra fringilla.',
-    },
-    {
-      name: 'Jane Smith',
-      icon: 'fa fa-check fa-2x',
-      text: 'Pellentesque euismod euismod lacus sit amet aliquam. Nulla facilisi. Cras dapibus ullamcorper risus, nec facilisis enim commodo eget.',
-    },
-    {
-      name: 'Michael Johnson',
-      icon: 'fa fa-diamond fa-2x',
-      text: 'Sed sed enim odio. Vestibulum porttitor velit eget purus dictum, id varius erat venenatis.',
-    },
+      name: 'Sites Empresariais',
+      icon: 'fa fa-desktop fa-2x',
+      text: 'Desenvolvemos sites empresariais personalizados que representam a sua marca de forma única. Nossos sites são responsivos, intuitivos e possuem uma estrutura sólida para atender às necessidades do seu negócio, incluindo landing pages otimizadas para conversões.', },
     
+      {
+      name: 'Suporte',
+      icon: 'fa fa-handshake-o fa-2x',
+      text: 'Oferecemos suporte contínuo aos nossos clientes, garantindo que suas dúvidas e preocupações sejam abordadas no mínimo 3 vezes por semana. Estamos aqui para auxiliar e assegurar que você esteja sempre informado sobre o progresso e as ações realizadas.',
+    },
+    {
+      name: 'Processos Comerciais',
+      icon: 'fa fa-building fa-2x',
+      text: 'Utilizando prospecção ativa, cold call e estratégias de e-mail marketing, coletamos dados de potenciais clientes interessados em seus produtos. Apresentamos soluções personalizadas para desafios específicos, orientando-os na busca pela solução ideal.',
+    },
   ];
 
   return (
-    <SectionBackground background={!background} sectionId={sectionId} >
-    <Styled.Container>
-    
-        <Styled.Container>
-        
-        <Heading  color="black" colorDark={!background} size="huge" as="h2">
-        OUR SERVICES
+    <SectionBackground background={!background} sectionId={sectionId}>
+      <Styled.Container>
+        <Heading color="black" colorDark={!background} size="huge" as="h2">
+          OUR SERVICES
         </Heading>
-          </Styled.Container>
 
-        {/* Usando TestimonialContainer para organizar os depoimentos */}
         <Styled.TestimonialContainer>
           {testimonialsData.map((testimonial, index) => (
             <Styled.Testimonial key={index}>
               <div className="testimonial-image">
-
-              <Styled.ServiceCardIcon colorDark={!background}>
-                <Styled.IcoInsta colorDark={background}>
-                <i className= {`${testimonial.icon}`}/>
-                </Styled.IcoInsta>
-              </Styled.ServiceCardIcon>
+                <Styled.ServiceCardIcon colorDark={!background}>
+                  <Styled.IcoInsta colorDark={background}>
+                    <i className={testimonial.icon} />
+                  </Styled.IcoInsta>
+                </Styled.ServiceCardIcon>
               </div>
               <div className="testimonial-content">
-              
-              <div colorDark={background} className="testimonial-meta">{testimonial.name}</div>
+                <div colorDark={background} className="testimonial-meta">
+                  {testimonial.name}
+                </div>
                 <p>"{testimonial.text}"</p>
-              
               </div>
             </Styled.Testimonial>
           ))}
         </Styled.TestimonialContainer>
-
-
-    </Styled.Container>
-</SectionBackground>
+      </Styled.Container>
+    </SectionBackground>
   );
 };
 
@@ -82,3 +75,5 @@ ServiceV2.propTypes = {
   background: P.bool.isRequired,
   sectionId: P.string,
 };
+
+export default ServiceV2;

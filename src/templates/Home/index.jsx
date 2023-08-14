@@ -8,6 +8,7 @@ import { Depoimentos } from '../../components/Depoimentos';
 import { AboutUs } from '../../components/AboutUs';
 import { Service } from '../../components/Service';
 import { ServiceV2 } from '../../components/ServiceV2';
+import {theme} from '../../styles/theme'
 ; // Substitua pelo caminho correto para o componente Contact
 
 
@@ -23,11 +24,12 @@ export const Home = () => {
      srcImg: 'assets/images/LogoSFC.png',
     };
 const contactData = {
-  address: 'gabrielb_barroso',
-  phone: '(98) 4002-8922',
-  email: 'GabrielMenezes1905@gmail.com',
-  instagram: 'https://www.instagram.com/gabrielb_barroso/',
-  wpp: 'https://api.whatsapp.com/send?phone=559898069862&text=teste',
+  address: 'asf.capital',
+  phone: '(98) 8628-1111',
+  email: 'EmanuelAsafe@gmail.com',
+  instagram: 'https://www.instagram.com/asf.capital/?hl=pt-br',
+  wpp: 'https://api.whatsapp.com/send?phone=559886281111&text=Olá',
+
 
 };
 const argsServices= {
@@ -43,7 +45,22 @@ const argsServices= {
   };
   const key = 'chave-unica'; // Defina uma chave única para o componente GridImage
   const contactData2 = { 
-    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    paragraph: (
+      <p>
+        - Nós, junto com nossos clientes, formamos uma unidade. 
+        <br />
+        Fundada por <strong style={{ color: theme.colors.primaryColor }}>Emanuel Asafe</strong>, nossa empresa surgiu durante a pandemia de COVID-19, quando muitos enfrentavam incertezas. 
+
+        <p>
+        </p>
+        - Nasceu da necessidade de implementar processos reais e estatísticos para impulsionar faturamentos mensais de empresas.
+        <p>
+        - Hoje, além de garantir aumentos de lucro para nossos clientes, conquistamos seu respeito, gratidão e 
+        nos tornamos <strong style={{ color: theme.colors.primaryColor }}>referência no mercado</strong>.
+        </p>
+        - Desde então, transformamos <strong style={{ color: theme.colors.primaryColor }}>desafios em oportunidades</strong> e crescemos juntos, oferecendo resultados tangíveis e duradouros.
+      </p>
+    ),
     Why: ['Integridade', 'Responsabilidade', 'Profissionalismo'],
     Why2: ['Direcionamento', 'Resultados', 'Lucros'],    
   };

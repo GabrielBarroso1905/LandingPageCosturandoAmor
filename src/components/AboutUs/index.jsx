@@ -9,14 +9,13 @@ import { SectionContainer } from '../SectionContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-import { GridText } from '../GridText';
-export const AboutUs = ({ data, sectionId, background }) => { 
+export const AboutUs = ({ data, sectionId, background}) => { 
  
   return (
     <SectionBackground background={!background} sectionId={sectionId}>
     <Styled.Container background={!background} >
      <Styled.ImageContainer>
-     <Styled.Image src='https://source.unsplash.com/random/500x440?r=2' className="img-responsive" alt="" />
+     <Styled.Image src='/assets/images/asafe.jpeg' className="img-responsive" alt="" />
      </Styled.ImageContainer>
 
     <Styled.About>
