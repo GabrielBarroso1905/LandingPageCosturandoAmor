@@ -138,7 +138,7 @@ export const Contact = ({ data, sectionId, background }) => {
       <Styled.ContactItem>
      
           <Styled.A  colorDark={!background} href={data ? data.instagram : '/'}>
-            <i className="fa fa-instagram fa-5x"></i>
+            <i className="fa fa-instagram fa-4x"></i>
             <p>
             <span>
               <i className="fa fa-instagram"></i>
@@ -151,7 +151,7 @@ export const Contact = ({ data, sectionId, background }) => {
             </Styled.ContactItem>
             <Styled.ContactItem>
               <Styled.A colorDark={!background} href={data ? data.wpp : '/'}>
-                <i className="fa fa-whatsapp fa-5x"></i>
+                <i className="fa fa-whatsapp fa-4x"></i>
                 <p>
             <span>
               <i className="fa fa-phone"></i>Phone
@@ -162,7 +162,7 @@ export const Contact = ({ data, sectionId, background }) => {
             </Styled.ContactItem>
             <Styled.ContactItem>
               <Styled.A colorDark={!background}  href={data ? data.linkGmail : '/'} onClick={handleCopyEmail}>
-                <i className="fa fa-envelope fa-5x"></i>
+                <i className="fa fa-envelope fa-4x"></i>
                 <p>
             <span>
               <i className="fa fa-envelope-o"></i> Email

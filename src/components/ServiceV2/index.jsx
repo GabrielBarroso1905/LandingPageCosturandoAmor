@@ -44,8 +44,7 @@ export const ServiceV2 = ({ background, sectionId }) => {
     <SectionBackground background={!background} sectionId={sectionId}>
       <Styled.Container>
         <Heading color="black" colorDark={!background} size="huge" as="h2">
-          OUR SERVICES
-        </Heading>
+       Nossos Serviços </Heading>
 
         <Styled.TestimonialContainer>
           {testimonialsData.map((testimonial, index) => (

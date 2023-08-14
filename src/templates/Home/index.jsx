@@ -26,7 +26,7 @@ export const Home = () => {
 const contactData = {
   address: 'asf.capital',
   phone: '(98) 8628-1111',
-  email: 'EmanuelAsafe@gmail.com',
+  email: 'contato@emanuelasafe.com',
   instagram: 'https://www.instagram.com/asf.capital/?hl=pt-br',
   wpp: 'https://api.whatsapp.com/send?phone=559886281111&text=Olá',
 

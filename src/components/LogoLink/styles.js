@@ -8,7 +8,8 @@ export const Container = styled.a`
     color: inherit;
 
     > img {
-      height: 3rem;
+      border-radius: 15px;
+      height: 5rem;
     }
   `}
 `;

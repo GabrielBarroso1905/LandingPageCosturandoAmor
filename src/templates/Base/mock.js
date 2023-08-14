@@ -13,7 +13,7 @@ export const mockBase = {
   logoData: {
     text: 'Logo',
     link: '#',
-    srcImg: 'assets/images/favicon.ico',
+    srcImg: 'assets/images/LOGO.png',
   },
   footerHtml: '<p>Feito por Gabriel Barroso</p>',
 };
