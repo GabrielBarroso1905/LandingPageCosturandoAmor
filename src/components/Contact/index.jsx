@@ -44,7 +44,7 @@ export const Contact = ({ data, sectionId, background }) => {
     console.log(name, email, message);
     setIsSendingEmail(true); 
     emailjs
-      .sendForm('gmailMassage', 'template_84p6leq', e.target, 'ad0N9gF7s1SE9x22z')
+      .sendForm('gmailMassage', 'template_84p6leq', e.target, '50yhkWLYL8ofvTtF1')
       .then(
         (result) => {
           console.log(result.text);
