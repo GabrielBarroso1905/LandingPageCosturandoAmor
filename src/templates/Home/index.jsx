@@ -4,12 +4,7 @@ import { GridTwoColumns } from '../../components/GridTwoColumns';
 import { GridContent } from '../../components/GridContent';
 import mock from '../../components/GridContent/mock'; 
 import { Contact } from '../../components/Contact';
-import { Depoimentos } from '../../components/Depoimentos';
 import { AboutUs } from '../../components/AboutUs';
-import { Service } from '../../components/Service';
-import { ServiceV2 } from '../../components/ServiceV2';
-import {theme} from '../../styles/theme'
-; // Substitua pelo caminho correto para o componente Contact
 import AboutUs2 from '../../components/AboutUs2';
 
 
@@ -19,8 +14,8 @@ export const Home = () => {
   const args = {
     title: 'PONTE DIGITAL',
   
-    text: `O Programa Ponte Digital oferece cursos de informática acessíveis para capacitar a comunidade, promovendo inclusão digital e desenvolvimento pessoal em diversas áreas, além do mercado de trabalho.`,
-    
+    "text": "O Programa Ponte Digital tem como objetivo principal aproximar a academia (IFMA) da sociedade, promovendo o conhecimento digital para melhorar a vida e o trabalho das pessoas. Através da implementação de projetos específicos, o programa integra o conhecimento acadêmico com as necessidades reais da comunidade, atendendo a demandas digitais e promovendo a inclusão digital.",
+  
      srcImg: 'assets/images/logoPonte.png',
     };
 const contactData = {
@@ -32,18 +27,12 @@ const contactData = {
 
 
 };
-const argsServices= {
-  title: 'Depoimentos', // Defina os valores desejados para title e description
-  title2: 'Título 3 customizado', // Defina os valores desejados para title e description
-  description: 'Descrição customizada', // Defina os valores desejados para title e description
 
-}
   const argsGridContent = {
     title: mock.title,
     html: mock.html,
   
   };
-  const key = 'chave-unica'; // Defina uma chave única para o componente GridImage
   const contactData2 = { 
     paragraph: (
       <p>
