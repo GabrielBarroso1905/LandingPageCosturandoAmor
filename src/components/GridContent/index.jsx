@@ -13,7 +13,7 @@ export const GridContent = ({
   return (
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
-        <Heading uppercase colorDark={!background} as="h2">
+        <Heading  color='#d4c29a' uppercase colorDark={!background} as="h2">
           {title}
         </Heading>
         <Styled.Html>

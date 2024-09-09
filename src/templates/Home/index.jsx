@@ -10,25 +10,25 @@ import { Service } from '../../components/Service';
 import { ServiceV2 } from '../../components/ServiceV2';
 import {theme} from '../../styles/theme'
 ; // Substitua pelo caminho correto para o componente Contact
+import AboutUs2 from '../../components/AboutUs2';
 
 
 export const Home = () => {
 
 
   const args = {
-    title: 'ASF Capital',
+    title: 'PONTE DIGITAL',
   
-    text: `Uma holding focada em estabelecer processos comerciais B2B para chegar mais rápido e
-     com menos burocracia a um aumento de faturamento de 20 a 50% todos os meses.`,
+    text: `O Programa Ponte Digital oferece cursos de informática acessíveis para capacitar a comunidade, promovendo inclusão digital e desenvolvimento pessoal em diversas áreas, além do mercado de trabalho.`,
     
-     srcImg: 'assets/images/LogoSFC.png',
+     srcImg: 'assets/images/logoPonte.png',
     };
 const contactData = {
-  address: 'asf.capital',
-  phone: '(98) 8628-1111',
-  email: 'contato@emanuelasafe.com',
-  instagram: 'https://www.instagram.com/asf.capital/?hl=pt-br',
-  wpp: 'https://api.whatsapp.com/send?phone=559886281111&text=Olá',
+  address: 'ifma.oficial',
+  phone: '(98) 8806-9862',
+  email: 'digti@ifma.edu.br',
+  instagram: 'https://www.instagram.com/ifma.oficial/?hl=pt',
+  wpp: 'https://api.whatsapp.com/send?phone=559888069862&text=Olá',
 
 
 };
@@ -47,19 +47,42 @@ const argsServices= {
   const contactData2 = { 
     paragraph: (
       <p>
-        - Nós, junto com nossos clientes, formamos uma unidade. 
-        <br />
-        Fundada por <strong style={{ color: theme.colors.primaryColor }}>Emanuel Asafe</strong>, nossa empresa surgiu durante a pandemia de COVID-19, quando muitos enfrentavam incertezas. 
+      - Considerando a <strong style={{ color: 'black' }}>dificuldade que alguns idosos enfrentam</strong> para navegar de forma independente em dispositivos tecnológicos, o projeto <strong style={{ color: 'black' }}>Autonomia Digital</strong> foi criado para oferecer uma solução prática.
+      <br />
+      - Nosso objetivo é <strong style={{ color: 'black' }}>proporcionar autonomia</strong> aos participantes através de um <strong style={{ color: 'black' }}>minicurso</strong>, capacitando-os para realizar atividades desejadas e exercer deveres cívicos no ambiente virtual.
+      <p></p>
+      - Com o <strong style={{ color: 'black' }}>Autonomia Digital</strong>, buscamos <strong style={{ color: 'black' }}>tornar a tecnologia acessível e independente</strong>, garantindo que os idosos possam <strong style={{ color: 'black' }}>navegar com confiança e liberdade</strong> em um mundo digital cada vez mais presente.
+    </p>
+    ),
+    Why: ['Integridade', 'Responsabilidade', 'Profissionalismo'],
+    Why2: ['Direcionamento', 'Resultados', 'Lucros'],    
+  };
+  const contactData3 = { 
+    paragraph: (
+      <p>
+      - O projeto <strong style={{ color: '#00c69c' }}>Capacitatech</strong> visa <strong style={{ color: '#00c69c' }}>desenvolver e implementar</strong> um projeto de extensão universitária focado no ensino de <strong style={{ color: '#00c69c' }}>habilidades específicas em informática</strong> para a comunidade.
+      <br />
+      - O foco principal está em <strong style={{ color: '#00c69c' }}>ferramentas de escritório do Google Docs</strong>, com o objetivo de <strong style={{ color: '#00c69c' }}>capacitar os participantes</strong> para o uso eficaz de tecnologias digitais em suas vidas pessoais e profissionais.
+      <p></p>
+      - Com o <strong style={{ color: '#00c69c' }}>Capacitatech</strong>, buscamos <strong style={{ color: '#00c69c' }}>proporcionar conhecimentos práticos</strong> que permitirão aos participantes <strong style={{ color: '#00c69c' }}>otimizar suas atividades diárias</strong> e melhorar seu desempenho no ambiente de trabalho.
+    </p>
+    ),
+    Why: ['Integridade', 'Responsabilidade', 'Profissionalismo'],
+    Why2: ['Direcionamento', 'Resultados', 'Lucros'],    
+  };
 
-        <p>
-        </p>
-        - Nasceu da necessidade de implementar processos reais e estatísticos para impulsionar faturamentos mensais de empresas.
-        <p>
-        - Hoje, além de garantir aumentos de lucro para nossos clientes, conquistamos seu respeito, gratidão e 
-        nos tornamos <strong style={{ color: theme.colors.primaryColor }}>referência no mercado</strong>.
-        </p>
-        - Desde então, transformamos <strong style={{ color: theme.colors.primaryColor }}>desafios em oportunidades</strong> e crescemos juntos, oferecendo resultados tangíveis e duradouros.
-      </p>
+  const contactData4 = { 
+    paragraph: (
+      <p>
+  - O mercado de <strong style={{ color: 'black' }}>tecnologia da informação</strong> está em constante crescimento, e a demanda por <strong style={{ color: 'black' }}>profissionais qualificados</strong> cresce a passos rápidos, superando a capacidade de formação dos institutos e universidades. 
+  <br />
+  - O <strong style={{ color: 'black' }}>InspiraTech Jovem</strong> surge para preencher essa lacuna, incentivando e <strong style={{ color: 'black' }}>preparando jovens</strong> para ingressar nesse setor promissor.
+  <p></p>
+  - Nosso objetivo é <strong style={{ color: 'black' }}>expandir a formação de profissionais</strong>, oferecendo oportunidades e recursos que serão o passo inicial para que eles se tornem <strong style={{ color: 'black' }}>especialistas</strong> e atendam às demandas do mercado.
+  <p></p>
+  - Com a nossa iniciativa, queremos <strong style={{ color: 'black' }}>transformar a realidade dos jovens</strong>, tornando-os aptos a enfrentar os desafios do setor e a contribuir para o <strong style={{ color: 'black' }}>crescimento contínuo da indústria de TI</strong>.
+</p>
+
     ),
     Why: ['Integridade', 'Responsabilidade', 'Profissionalismo'],
     Why2: ['Direcionamento', 'Resultados', 'Lucros'],    
@@ -70,13 +93,12 @@ const argsServices= {
   return (
     <>
       <Base {...mockBase} >
-        <GridTwoColumns {...args}  background sectionId = 'target1'/>
+        <GridTwoColumns  {...args}  background={true} sectionId = 'target1'/>
         <GridContent {...argsGridContent} sectionId = 'target2'/>
-        <AboutUs data={contactData2} background={false} sectionId = 'target3'/>
-        <ServiceV2  background= {true} color={'black'}sectionId = 'target4' />
-        <Service {...argsServices} color={"#fa9348"} background= {true} sectionId = 'target5' />
-        <Depoimentos  background= {false} />
-        <Contact data={contactData}  sectionId = 'target6' />
+        <AboutUs title="Autonomia Digital" imageSrc={"/assets/images/logoprojeto2.png"} color={"#94d3e6"} data={contactData2} background={false} sectionId = 'target3'/>
+        <AboutUs2 data={contactData3} color={'white'}  background={true} sectionId = 'target4'/>
+        <AboutUs title="InspiraTech Jovem"color={"#fff7ad"} imageSrc={"/assets/images/logoprojeto3.png"} data={contactData4} background={false} sectionId = 'target5'/>
+       <Contact data={contactData}  sectionId = 'target6' />
       </Base>
     </>
   );

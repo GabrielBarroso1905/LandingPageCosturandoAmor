@@ -10,17 +10,17 @@ export default [
     newTab: false,
   },
   {
-    children: 'Quem somos',
+    children: 'Autonomia Digital',
     link: '#target3',
     newTab: false,
   },
   {
-    children: 'Serviços',
+    children: 'CapacitaTech',
     link: '#target4',
     newTab: false,
   },
   {
-    children: 'Depoimentos',
+    children: 'InspiraTech Jovem',
     link: '#target5',
     newTab: false,
   },

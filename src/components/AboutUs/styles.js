@@ -4,7 +4,7 @@ import { Title } from '../Heading/styles';
 export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     align-items: center;
     gap: ${theme.spacings.medium}; /* Reduzimos o espaçamento entre os elementos */
 
@@ -21,7 +21,14 @@ export const Container = styled.div`
 
 export const About = styled.div`
   ${({ theme }) => css`
-    /* margin-bottom: ${theme.spacings.xhuge}; */
+    display: flex;
+    flex-direction: reverse; /* Inverte a ordem dos elementos */
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (max-width: 768px) {
+      flex-direction: column-reverse; /* Inverte também em telas menores */
+    }
   `}
 `;
 

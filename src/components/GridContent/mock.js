@@ -1,25 +1,19 @@
-
 export default {
   title: 'O que fazemos',
   html: `
-  <p>A ASF Capital é 110% focada em aumentar tanto o nosso faturamento quanto o de nossos clientes.<p>
+  <p>O Programa Ponte Digital é focado em promover o desenvolvimento pessoal e digital da comunidade, abrangendo diferentes públicos e áreas específicas.<p>
   
   <p>
-  Utilizamos diversos meios digitais para atingir esse objetivo. Desde anúncios on-line até prospecção ativa,
-  nosso objetivo é transformar empresas em verdadeiras máquinas de vendas, gerando receita diariamente.
+  Composto por três projetos principais, Autonomia Digital, InspiraTech Jovem e CapacitaTech, nosso programa oferece capacitação em informática e tecnologia, ajudando pessoas de todas as idades a se conectarem ao mundo digital. Cada projeto aborda uma área específica, voltada para diferentes necessidades e grupos, ampliando as oportunidades de inclusão digital e crescimento pessoal.
   <p>
   
   <p>
-  Com uma equipe composta por mais de 10 colaboradores,
-  trabalhamos de forma ininterrupta para assegurar a satisfação dos nossos clientes e o contínuo crescimento 
-  de cada um deles e de suas empresas.
+  Criado e implementado por alunos do IFMA, o programa conta com a mentoria da professora Jeane Silva Ferreira, que orienta e apoia os estudantes em todas as etapas de cada projeto. Nosso compromisso é preparar a comunidade para um futuro mais conectado e digital.
   <p>
   <p>
-  Reconhecemos que a transição e adoção de novos processos pode ser diferente do que a maioria dos empresários está acostumada.
-  No entanto, oferecemos suporte pelo menos 3 vezes por semana para garantir que nossos
-  clientes estejam cientes de todas as ações que estamos realizando para impulsionar seus faturamentos.
+  Entendemos que a jornada de aprendizado pode ser desafiadora, mas estamos aqui para oferecer suporte contínuo, garantindo que cada participante aproveite ao máximo as oportunidades do mundo digital.
   <p>
-  <strong>Isso é ASF Capital.<strong>
+  <strong>Isso é o Programa Ponte Digital.<strong>
 `,
   background: false,
 };

@@ -6,10 +6,10 @@ const containerBackgroundActivate = (theme) => css`
 `;
 
 export const Container = styled.div`
-  ${({ theme, background }) => css`
-    background: ${theme.colors.white};
+  ${({ theme, background, color }) => css`
+    background: ${color ? color : theme.colors.white};
     color: ${theme.colors.Color};
-    ${background && containerBackgroundActivate(theme)};
+    ${background && !color && containerBackgroundActivate(theme)};
     min-height: 100vh;
     display: flex;
     align-items: center;
