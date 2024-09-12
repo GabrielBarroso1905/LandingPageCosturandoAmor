@@ -25,8 +25,13 @@ export default [
     newTab: false,
   },
   {
-    children: 'Contato',
+    children: 'Galeria',
     link: '#target6',
+    newTab: false,
+  },
+  {
+    children: 'Contato',
+    link: '#target7',
     newTab: false,
   },
 

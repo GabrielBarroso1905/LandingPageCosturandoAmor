@@ -6,15 +6,17 @@ import mock from '../../components/GridContent/mock';
 import { Contact } from '../../components/Contact';
 import { AboutUs } from '../../components/AboutUs';
 import AboutUs2 from '../../components/AboutUs2';
+import { GridImage } from '../../components/GridImage';
 
 
 export const Home = () => {
 
+  const key = 'chave-unica'; // Defina uma chave única para o componente GridImage
 
   const args = {
     title: 'PONTE DIGITAL',
   
-    "text": "O Programa Ponte Digital tem como objetivo principal aproximar a academia (IFMA) da sociedade, promovendo o conhecimento digital para melhorar a vida e o trabalho das pessoas. Através da implementação de projetos específicos, o programa integra o conhecimento acadêmico com as necessidades reais da comunidade, atendendo a demandas digitais e promovendo a inclusão digital.",
+    "text": "    O Programa Ponte Digital conecta o IFMA à comunidade, promovendo inclusão digital e capacitação tecnológica. Através de projetos inovadores, buscamos transformar vidas ao integrar o conhecimento acadêmico com as demandas reais da sociedade.",
   
      srcImg: 'assets/images/logoPonte.png',
     };
@@ -27,6 +29,45 @@ const contactData = {
 
 
 };
+
+const section = {
+  title: 'Galeria',
+  description: 'Equipes',
+  grid: [
+    {
+      
+      altText: 'Teste 1',
+      srcImg: 'assets/images/1.jpeg',
+    },
+      
+    {
+      altText: 'Teste 2',
+      srcImg: 'assets/images/3.jpeg',
+    },
+    {
+      altText: 'Teste 2',
+      srcImg: 'assets/images/2.jpeg',
+    },
+    {
+      altText: 'Teste 2',
+      srcImg: 'assets/images/6.jpeg',
+    },
+    {
+      altText: 'Teste 2',
+      srcImg: 'assets/images/4.jpeg',
+    },
+
+    {
+      altText: 'Teste 2',
+      srcImg: 'assets/images/5.jpeg',
+    },
+    // Adicione mais objetos conforme necessário
+  ],
+};
+
+
+
+
 
   const argsGridContent = {
     title: mock.title,
@@ -87,7 +128,8 @@ const contactData = {
         <AboutUs title="Autonomia Digital" imageSrc={"/assets/images/logoprojeto2.png"} color={"#94d3e6"} data={contactData2} background={false} sectionId = 'target3'/>
         <AboutUs2 data={contactData3} color={'white'}  background={true} sectionId = 'target4'/>
         <AboutUs title="InspiraTech Jovem"color={"#fff7ad"} imageSrc={"/assets/images/logoprojeto3.png"} data={contactData4} background={false} sectionId = 'target5'/>
-       <Contact data={contactData}  sectionId = 'target6' />
+        <GridImage key={key}{...section} sectionId = 'target6' background/>
+       <Contact data={contactData}  sectionId = 'target7' />
       </Base>
     </>
   );

@@ -1,19 +1,21 @@
 export default {
   title: 'O que fazemos',
   html: `
-  <p>O Programa Ponte Digital é focado em promover o desenvolvimento pessoal e digital da comunidade, abrangendo diferentes públicos e áreas específicas.<p>
-  
+  <p>O Programa Ponte Digital tem o objetivo de aproximar a academia (IFMA) da sociedade, promovendo o conhecimento e inclusão digital.<p>
+
   <p>
-  Composto por três projetos principais, Autonomia Digital, InspiraTech Jovem e CapacitaTech, nosso programa oferece capacitação em informática e tecnologia, ajudando pessoas de todas as idades a se conectarem ao mundo digital. Cada projeto aborda uma área específica, voltada para diferentes necessidades e grupos, ampliando as oportunidades de inclusão digital e crescimento pessoal.
+  Idealizado pela turma de Gerenciamento de Projetos (7º período), o programa nasceu do trabalho em conjunto com as turmas de Fundamentos de Sistemas de Informação (3º período) e Extensão1 (2º período), unindo esforços para atender às necessidades da comunidade.
   <p>
-  
+
   <p>
-  Criado e implementado por alunos do IFMA, o programa conta com a mentoria da professora Jeane Silva Ferreira, que orienta e apoia os estudantes em todas as etapas de cada projeto. Nosso compromisso é preparar a comunidade para um futuro mais conectado e digital.
+  Composto pelos projetos Autonomia Digital, CapacitaTECH e Inspiratech Jovem, o programa visa integrar o conhecimento acadêmico com as demandas reais da sociedade, ampliando as oportunidades de inclusão digital.
   <p>
+
   <p>
-  Entendemos que a jornada de aprendizado pode ser desafiadora, mas estamos aqui para oferecer suporte contínuo, garantindo que cada participante aproveite ao máximo as oportunidades do mundo digital.
+  Mais do que uma tarefa acadêmica, essa iniciativa representa a chance de iniciar um ciclo de ações transformadoras, capazes de gerar impacto positivo e duradouro na sociedade.
   <p>
+
   <strong>Isso é o Programa Ponte Digital.<strong>
-`,
+  `,
   background: false,
 };
