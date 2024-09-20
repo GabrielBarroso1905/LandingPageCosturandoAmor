@@ -7,6 +7,7 @@ import { Contact } from '../../components/Contact';
 import { AboutUs } from '../../components/AboutUs';
 import AboutUs2 from '../../components/AboutUs2';
 import { GridImage } from '../../components/GridImage';
+import { GridImage2 } from '../../components/GridImage2'; // Substitua pelo caminho correto
 
 
 export const Home = () => {
@@ -119,6 +120,143 @@ const section = {
   };
 
  
+  const section2 = {
+    paragraph: 'Aqui estão algumas imagens que representam nossas atividades.',
+    images: [
+      {
+        src: 'assets/images/PonteDigital/equipe1.jpg',
+        alt: 'Equipe 1',
+        caption: 'Descrição da equipe 1',
+      },
+      {
+        src: 'assets/images/PonteDigital/equipe2.jpg',
+        alt: 'Equipe 2',
+        caption: 'Descrição da equipe 2',
+      },
+      {
+        src: 'assets/images/PonteDigital/equipe3.jpg',
+        alt: 'Equipe 3',
+        caption: 'Descrição da equipe 3',
+      },
+      {
+        src: 'assets/images/PonteDigital/12.jpg',
+        alt: 'Imagem 12',
+        caption: 'Descrição da imagem 12',
+      },
+      {
+        src: 'assets/images/PonteDigital/8.jpg',
+        alt: 'Imagem 8',
+        caption: 'Descrição da imagem 8',
+      },
+      {
+        src: 'assets/images/PonteDigital/5.jpg',
+        alt: 'Imagem 5',
+        caption: 'Descrição da imagem 5',
+      },
+      {
+        src: 'assets/images/PonteDigital/1.1.jpg',
+        alt: 'Imagem 1.1',
+        caption: 'Descrição da imagem 1.1',
+      },
+      {
+        src: 'assets/images/PonteDigital/professores.jpg',
+        alt: 'Imagem 1.2',
+        caption: 'Descrição da imagem 1.2',
+      },
+      {
+        src: 'assets/images/PonteDigital/9.jpg',
+        alt: 'Imagem 9',
+        caption: 'Descrição da imagem 9',
+      },
+      {
+        src: 'assets/images/PonteDigital/6.jpg',
+        alt: 'Imagem 6',
+        caption: 'Descrição da imagem 6',
+      },
+      {
+        src: 'assets/images/PonteDigital/1.jpg',
+        alt: 'Imagem 1',
+        caption: 'Descrição da imagem 1',
+      },
+       
+      {
+        src: 'assets/images/PonteDigital/todos.jpg',
+        alt: 'Todos',
+        caption: 'Descrição de todos',
+      },
+    
+      {
+        src: 'assets/images/PonteDigital/10.jpg',
+        alt: 'Imagem 10',
+        caption: 'Descrição da imagem 10',
+      },
+
+      {
+        src: 'assets/images/PonteDigital/7.jpg',
+        alt: 'Imagem 7',
+        caption: 'Descrição da imagem 7',
+      },
+   
+      {
+        src: 'assets/images/PonteDigital/3.jpg',
+        alt: 'Imagem 3',
+        caption: 'Descrição da imagem 3',
+      },
+      {
+        src: 'assets/images/PonteDigital/professores2.jpg',
+        alt: 'Imagem 2',
+        caption: 'Descrição da imagem 2',
+      },
+       
+      {
+        src: 'assets/images/PonteDigital/11.jpg',
+        alt: 'Imagem 11',
+        caption: 'Descrição da imagem 11',
+      },
+      {
+        src: 'assets/images/PonteDigital/4.jpg',
+        alt: 'Imagem 4',
+        caption: 'Descrição da imagem 4',
+      },
+
+
+      {
+        src: 'assets/images/PonteDigital/1.3.jpg',
+        alt: 'Imagem 1.3',
+        caption: 'Descrição da imagem 1.3',
+      },
+  
+   
+    
+      {
+        src: 'assets/images/PonteDigital/1.2.2.jpg',
+        alt: 'Imagem 6.2',
+        caption: 'Descrição da imagem 6.2',
+      },
+      {
+        src: 'assets/images/PonteDigital/11.1.jpg',
+        alt: 'Imagem 11.1',
+        caption: 'Descrição da imagem 11.1',
+      },
+      {
+        src: 'assets/images/PonteDigital/6.3.jpg',
+        alt: 'Imagem 6.3',
+        caption: 'Descrição da imagem 6.3',
+      },
+      {
+        src: 'assets/images/PonteDigital/1.5.jpg',
+        alt: 'Imagem 1.5',
+        caption: 'Descrição da imagem 1.5',
+      },
+      {
+        src: 'assets/images/PonteDigital/final.jpg',
+        alt: 'Imagem 6.1',
+        caption: 'Descrição da imagem 6.1',
+      },
+   
+   
+    ],
+  };
   
   return (
     <>
@@ -129,6 +267,7 @@ const section = {
         <AboutUs2 data={contactData3} color={'white'}  background={true} sectionId = 'target4'/>
         <AboutUs title="InspiraTech Jovem"color={"#fff7ad"} imageSrc={"/assets/images/logoprojeto3.png"} data={contactData4} background={false} sectionId = 'target5'/>
         <GridImage key={key}{...section} sectionId = 'target6' background/>
+        <GridImage2 data={section2} sectionId='target8' background/>
        <Contact data={contactData}  sectionId = 'target7' />
       </Base>
     </>
