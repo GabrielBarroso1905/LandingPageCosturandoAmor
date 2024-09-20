@@ -253,8 +253,16 @@ const section = {
         alt: 'Imagem 6.1',
         caption: 'Descrição da imagem 6.1',
       },
-   
-   
+      {
+        src: 'assets/images/PonteDigital/final1.jpeg',
+        alt: 'Imagem 6.1',
+        caption: 'Descrição da imagem 6.1',
+      },
+      {
+        src: 'assets/images/PonteDigital/final2.jpeg',
+        alt: 'Imagem 6.1',
+        caption: 'Descrição da imagem 6.1',
+      },
     ],
   };
   
